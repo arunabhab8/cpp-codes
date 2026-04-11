@@ -1,1 +1,1 @@
-world
+< &ptr
