@@ -12,6 +12,9 @@ int* funcArray(){
 
     int *ptr = new int[size];
 
+
+    delete[] ptr;
+
     return ptr;
 }
 
