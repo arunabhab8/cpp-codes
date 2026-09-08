@@ -12,7 +12,7 @@ int main(){
 
     for (int i=2; i<=n; i++){
         isPrime = true;
-        for (int j=2; j<=n-1; j++){
+        for (int j=2; j*j<=i; j++){
             if (i % j == 0){
                 isPrime = false;
                 break;
