@@ -1,6 +1,7 @@
 // Maximum SubArray Sum (Brute Force)
 
 #include <iostream>
+#include <climits>
 using namespace std;
 
 int maxSubArraySum(int arr[], int n){
