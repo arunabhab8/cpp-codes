@@ -1,29 +1,26 @@
-// Maximum SubArray Sum (Brute Force)
+    // while (totalElements <= n*m){
 
-#include <iostream>
-using namespace std;
+    //     for (int i=stcol; i<=endcol; i++){
+    //         cout << arr[strow][i];
+    //         totalElements++;
+    //     }
+    //     strow++;
 
-int maxSubArraySum(int arr[], int n){
+    //     for (int i=strow; i<=endrow; i++){
+    //         cout << arr[i][endcol];
+    //         totalElements++;
+    //     }
+    //     endcol--;
 
-    int sum, maxSum = INT_MIN;
+    //     for (int i=endcol; i>=stcol; i--){
+    //         cout << arr[endrow][i];
+    //         totalElements++;
+    //     }
+    //     endrow--;
 
-    for (int i=0; i<n; i++){
-        sum = 0;
-        for(int j=i; j<n; j++){
-            sum = sum + arr[j];
-            maxSum = max(sum, maxSum);
-        }
-    }
-
-    return maxSum;
-}
-
-int main(){
-
-    int arr[6] = {2, -3, 6, -5, 4, 2};
-    int n = sizeof(arr)/sizeof(arr[0]);
-
-    cout << "Max Sub-array Sum: " << maxSubArraySum(arr, n) << endl;
-
-    return 0;
-}
+    //     for (int i=endrow; i>=strow; i--){
+    //         cout << arr[i][stcol];
+    //         totalElements++;
+    //     }
+    //     stcol++;
+    // }
